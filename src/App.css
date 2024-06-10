@@ -1,0 +1,374 @@
+:root {
+  --pretty-modal-modal-container-border-radius: 10px;
+  --pretty-modal-backdrop-backdrop-filter: blur(4px);
+}
+
+.line {
+  height: 2px;
+  background-color: #21c87a;
+}
+
+.btn-sm {
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.4rem;
+}
+
+.btn-outline-primary {
+  border-color: black;
+  background-color: black;
+  color: #fff;
+}
+
+.btn-outline-primary:hover {
+  border-color: black;
+  background-color: black;
+  color: #fff;
+}
+
+.btn-social-all {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-social {
+  display: none;
+}
+
+.card .btn-social {
+  position: absolute;
+  margin-top: 30px;
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  border: 1.5px solid black;
+  background-color: #fff;
+  border-radius: 50px;
+  transition: 0.3s;
+  z-index: 2;
+}
+
+.btn-social:hover {
+  background-color: #21c87a !important;
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+.animate {
+  animation-duration: 0.2s;
+  animation-name: animate-fade;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes animate-fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate.pop {
+  animation-name: animate-pop;
+  animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+}
+
+@keyframes animate-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+.delay-1 {
+  animation-delay: 0.3s;
+}
+
+/* memberProfile */
+
+.bg-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media screen and (max-width: 880px) {
+  .bg-img {
+    height: 148px;
+    margin-top: 90px;
+    /* width: 100%; */
+  }
+}
+
+.profile-card {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-img {
+  height: 124px;
+  width: 124px;
+  border: 1px solid #f9f9f9;
+  padding: 3px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 880px) {
+  .profile-img {
+    height: 124px;
+    width: 124px;
+    border: 1px solid #f9f9f9;
+    padding: 3px;
+    border-radius: 50%;
+  }
+}
+
+.main-info-card {
+  position: relative;
+  z-index: 1;
+  margin-left: 50px;
+  border-radius: 3px;
+  bottom: 70px;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+@media screen and (max-width: 880px) {
+  .main-info-card {
+    position: relative;
+    z-index: 1;
+    margin-left: 0px;
+    border-radius: 0px;
+    bottom: 50px;
+  }
+}
+
+.cardx-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}
+
+.card-styles {
+  box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.1);
+  transition: all 0.3s ease-in-out;
+
+  word-wrap: break-word;
+  background-clip: border-box;
+  border-radius: 0.428rem;
+}
+
+/* portfolio section */
+.header-block {
+  width: 100%;
+  max-width: 1280px;
+  align-content: center;
+  justify-content: start;
+  align-items: center;
+  padding-top: 128px;
+  padding-bottom: 110px;
+  display: flex;
+}
+
+.main-block {
+  width: 66.666%;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  align-items: flex-start;
+  display: flex;
+}
+
+.sub-para-portfolio {
+  color: #7f7f7f;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 38px;
+}
+
+.divider-info {
+  height: 2px;
+  background-color: #fff;
+  width: 100px;
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+
+.arrow:hover {
+  opacity: 0.25;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.main-portfolio-section {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+@media screen and (max-width: 880px) {
+  .main-portfolio-section {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.main-card {
+  transition: transform 0.6s; /* Animation */
+}
+
+.float-text{
+
+}
+
+.main-card:hover {
+  transform: scale(0.75);
+}
+
+.main-card:hover .arrow {
+  position: relative;
+  animation: myfirst 1s infinite;
+  animation-direction: normal;
+}
+
+@keyframes myfirst {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 10px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.main-background {
+  background: linear-gradient(#ff5a5f 0%, #fff 100%);
+}
+
+/* panel styles */
+.panel {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.main-section-info {
+  /* z-index: 10; */
+  /* background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); */
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-block {
+  z-index: 5;
+}
+
+/* .logo-style {
+  z-index: 0;
+  position: absolute;
+  height: 700px;
+  right: 500;
+  bottom: 0;
+  opacity: 0.3;
+} */
+
+
+.logo-style {
+  z-index: 0;
+  position: absolute;
+  height: 800px;
+  left: 750px; /* Adjust the right value as needed */
+  opacity: 0.3;
+  top: 50px;
+  overflow: hidden; /* This hides the right half of the image */
+}
+
+.img-height {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+
+/* loaoder on the projects section */
+
+.project-loader {
+  background: none repeat scroll 0 0 #fff;
+  border-bottom: 3px solid rgba(19, 19, 19, 0.1) !important;
+  border-left: 3px solid rgba(19, 19, 19, 0.1) !important;
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -o-border-radius: 100px;
+  -ms-border-radius: 100px;
+  border-right: 3px solid #1453f2 !important;
+  border-top: 3px solid rgba(19, 19, 19, 0.1) !important;
+  height: 50px;
+  left: 50%;
+  margin: -20px 0 0 -20px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 50px;
+  transform: translate(-50%, -50%);
+}
+
+.project-loader-color {
+  border-color: #fff;
+}
+
+.fa-spin {
+  -webkit-animation: fa-spin 1s infinite linear;
+  animation: fa-spin 1s infinite linear;
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+}
